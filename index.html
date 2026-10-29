@@ -1,0 +1,270 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apresentação Pessoal | Carlos Vinicius</title>
+
+    <!-- Fonte utilizada na página -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS dentro do próprio HTML -->
+    <style>
+        /* Configurações gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo principal da página */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef4fb;
+            color: #234a78;
+            line-height: 1.7;
+        }
+
+        /* Cabeçalho */
+        .cabecalho {
+            background-color: #d9eaff;
+            color: #174a7e;
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 4px solid #4d8dcc;
+        }
+
+        /* Título principal */
+        .cabecalho h1 {
+            color: #174a7e;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Subtítulo */
+        .subtitulo {
+            color: #356a9f;
+            font-size: 1.1rem;
+        }
+
+        /* Conteúdo principal */
+        .conteudo {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        /* Cartões das seções */
+        .cartao {
+            background-color: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid #4d8dcc;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(35, 74, 120, 0.10);
+        }
+
+        /* Títulos das seções */
+        .cartao h2 {
+            color: #174a7e;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Parágrafos */
+        .cartao p {
+            color: #234a78;
+            margin-bottom: 15px;
+        }
+
+        /* Listas */
+        .cartao ul {
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+
+        /* Itens das listas */
+        .cartao li {
+            color: #234a78;
+            margin-bottom: 8px;
+        }
+
+        /* Botão de interação */
+        button {
+            background-color: #2367a5;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Efeito ao passar o mouse no botão */
+        button:hover {
+            background-color: #174a7e;
+            transform: translateY(-2px);
+        }
+
+        /* Mensagem abaixo do botão */
+        #texto-mensagem {
+            background-color: #e1efff;
+            color: #174a7e;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #4d8dcc;
+        }
+
+        /* Rodapé */
+        .rodape {
+            background-color: #d9eaff;
+            color: #174a7e;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 40px;
+            border-top: 3px solid #4d8dcc;
+        }
+
+        /* Textos do rodapé */
+        .rodape p {
+            color: #174a7e;
+            font-size: 0.9rem;
+        }
+
+        /* Ajustes para celulares */
+        @media (max-width: 600px) {
+            .cabecalho {
+                padding: 30px 15px;
+            }
+
+            .cabecalho h1 {
+                font-size: 1.7rem;
+            }
+
+            .conteudo {
+                margin: 20px auto;
+                padding: 0 12px;
+            }
+
+            .cartao {
+                padding: 20px;
+            }
+
+            .cartao h2 {
+                font-size: 1.3rem;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <!-- JavaScript continua em arquivo separado -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header class="cabecalho">
+        <div class="identificacao">
+            <h1>Olá, eu sou Carlos Vinicius!</h1>
+            <p class="subtitulo">Bem-vindo à minha página pessoal.</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="conteudo">
+
+        <!-- Apresentação pessoal -->
+        <section class="cartao">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Meu nome é Carlos Vinicius e sou estudante da primeira fase
+                do curso de Análise e Desenvolvimento de Sistemas (ADS)
+                na Faculdade Municipal de Palhoça (FMP).
+            </p>
+
+            <p>
+                Estou iniciando minha jornada na área da tecnologia e
+                buscando aprender cada vez mais sobre programação e
+                desenvolvimento de sistemas.
+            </p>
+        </section>
+
+        <!-- Informações sobre os estudos -->
+        <section class="cartao">
+            <h2>O que estou estudando</h2>
+
+            <p>
+                Durante o curso, estou desenvolvendo meus conhecimentos
+                em programação e aprendendo a criar páginas para a web.
+            </p>
+
+            <ul>
+                <li>HTML: estrutura das páginas web.</li>
+                <li>CSS: aparência e organização visual das páginas.</li>
+                <li>Python: lógica de programação e resolução de problemas.</li>
+            </ul>
+        </section>
+
+        <!-- Interesses pessoais -->
+        <section class="cartao">
+            <h2>Meus interesses</h2>
+
+            <p>
+                Além da tecnologia, gosto de acompanhar a Fórmula 1,
+                assistir a jogos de futebol e jogar videogames.
+            </p>
+
+            <ul>
+                <li>Fórmula 1</li>
+                <li>Futebol</li>
+                <li>Jogos eletrônicos</li>
+                <li>Tecnologia e programação</li>
+            </ul>
+        </section>
+
+        <!-- Objetivos pessoais -->
+        <section class="cartao">
+            <h2>Minha jornada na programação</h2>
+
+            <p>
+                Meu objetivo é adquirir experiência, melhorar minhas
+                habilidades e construir projetos que contribuam para
+                meu desenvolvimento profissional na área de tecnologia.
+            </p>
+
+            <!-- Botão que será utilizado pelo JavaScript -->
+            <button id="botao-mensagem" type="button">
+                Clique Aqui Para Nada
+            </button>
+
+            <!-- Local onde a mensagem será exibida -->
+            <p id="texto-mensagem" aria-live="polite">
+                Estou no começo e a cada quero melhorar.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>Projeto desenvolvido por Carlos Vinicius.</p>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas — FMP.</p>
+    </footer>
+
+</body>
+
+</html>
+```
